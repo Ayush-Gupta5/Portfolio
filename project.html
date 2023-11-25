@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 25, 33);
+            color: white;
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 50, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 23px;
+        }
+
+        .left {
+            font-size: 1.8rem;
+        }
+
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0px;
+        }
+
+        .firstSection>div {
+            width: 90%;
+        }
+
+        .leftSection {
+            font-size: 1.5rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            font-size: 1.08rem;
+            color: rgb(90, 189, 228);
+        }
+
+        .heading {
+            display: flex;
+            justify-content: center;
+            font-size: 3rem;
+            margin-bottom: 80px;
+        }
+
+        footer {
+
+            text-align: center;
+            font-size: 1.3rem;
+            background-color: rgb(18, 50, 62);
+            margin-top: 0%;
+        }
+
+        .contain li {
+            margin: 20px 0px;
+            font-style: bold;
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+        }
+
+        p a,
+        b {
+            text-decoration: none;
+            color: rgb(90, 189, 228);
+        }
+
+        .topic {
+            color: rgb(90, 189, 228);
+        }
+        .Download{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="AboutMe.html">About Me</a></li>
+                    <li><a href="project.html">Projets</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a onclick="downloadPDF()" class="Download">Download Resume</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div class="heading">My Projects</div>
+                <div class="contain">
+                    <ul>
+                        <li class="topic">Mini Blog Website</li>
+                        <p>
+                            I designed and developed a compact blog website that offers an intuitive platform for
+                            administrators to create, publish, and efficiently manage blog posts, including their
+                            associated categories.<br><br>
+                            Languages: <b>PHP, HTML, CSS and Database MYSQL.</b><br><br>
+                            GitHub Repository: <b><a
+                                    href="https://github.com/Ayush-Gupta5/PHP-MySQL-MIni-Blog-Website" target="_blank">Click
+                                    Here</a></b>
+                        </p>
+                    </ul>
+                    <br>
+                    <hr>
+                    <ul>
+                        <li class="topic">Basic Banking System</li>
+                        <p>
+                            I designed and implemented a user-friendly Basic Banking System Website, allowing seamless
+                            money transfers between user accounts and providing a comprehensive transaction history
+                            feature to track financial activities.<br><br>
+                            Languages: <b>PHP, HTML, CSS and Database MYSQL.</b><br><br>
+                            GitHub Repository: <b><a
+                                    href="https://github.com/Ayush-Gupta5/Php-Spark-Banking-System-Website" target="_blank">Click
+                                    Here</a></b>
+                        </p>
+                    </ul>
+                    <br>
+                    <hr>
+                    <ul>
+                        <li class="topic">Basic Employee Management System</li>
+                        <p>
+                            I have created a Simple employee management system using the Laravel framework. This system
+                            allows us to efficiently oversee our staff by recording comprehensive information, including
+                            their department, personal details, and more. Additionally, it facilitates the management of
+                            employee departments.<br><br>
+                            Languages: <b>Laravel(PHP Framework), HTML, CSS and Database MYSQL.</b><br><br>
+                            GitHub Repository: <b><a href="https://github.com/Ayush-Gupta5/EMS-Project-Laravel" target="_blank">Click
+                                    Here</a></b>
+                        </p>
+                    </ul>
+                    <br>
+                    <hr>
+                    <ul>
+                        <li class="topic">Educourse Hub (Learning Management System)</li>
+                        <p>
+                            I developed a responsive WordPress-based LMS akin to Udemy, offering a broad spectrum of online courses spanning programming, arts, finance, and more, while also enabling user registration as instructors for course creation and sharing.<br><br>
+                            Tool & Plugin: <b>WordPress, Tutor LMS Plugin, WooCommerce.</b><br><br>
+                            GitHub Repository: <b><a href="https://github.com/Ayush-Gupta5/EduCourseHub-LMS-WordPress" target="_blank">Click
+                                    Here</a></b>
+                        </p>
+                    </ul>
+                    <br>
+                    <hr>
+                    <ul>
+                        <li class="topic">Online Mobile Shop (E-Commerce Website)</li>
+                        <p>
+                            I designed and built an e-commerce website utilizing WordPress. This platform enables users to conveniently shop for mobile phones and their accessories online, offering multiple payment options including UPI, credit/debit card, and a Cash on Delivery method for their convenience.<br><br>
+                            Tool & Plugin: <b>WordPress, WooCommerce.</b><br><br>
+                            GitHub Repository: <b><a href="https://github.com/Ayush-Gupta5/Ecommerce-WordPress" target="_blank">Click
+                                    Here</a></b>
+                        </p>
+                    </ul>
+                    <br>
+                    <hr>
+                    <ul>
+                        <li class="topic">All Chalisa (Android Application)</li>
+                        <p>
+                            I developed the 'All Chalisa' Android app in Java, providing users with access to a diverse collection of essential Hindu devotional hymns. It includes text, audio, and offline capabilities, fostering easy sharing and enhancing the experience of Chalisa enthusiasts.<br><br>
+                            Language & IDE: <b>Java, XML & Android Studio</b><br><br>
+                            GitHub Repository: <b><a href="https://github.com/Ayush-Gupta5/Android-Application-AllChalisa" target="_blank">Click
+                                    Here</a></b>
+                        </p>
+                    </ul>
+                    <br>
+                    <hr>
+                    <ul>
+                        <li class="topic">Library Management System (Window Application)</li>
+                        <p>
+                            I created a Windows application, specifically a Library Management System, using C#. This application provides users with the capability to efficiently oversee and manage various aspects of a library, including student records, book records, and other related functions.<br><br>
+                            Language & IDE: <b>C#</b><br><br>
+                            GitHub Repository: <b><a href="https://github.com/Ayush-Gupta5/Library-Management-System-C-Sharp" target="_blank">Click
+                                    Here</a></b>
+                        </p>
+                    </ul>
+                    <br>
+                    <hr>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script>
+        function downloadPDF() {
+            // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
+	    var pdfUrl = 'Document/Resume-Ayush-Gupta.pdf';
+            var a = document.createElement('a');
+            a.href = pdfUrl;
+            a.download = 'Ayush-Gupta-Resume.pdf'; // Name of the downloaded file
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+    </script>
+    <footer>&copy; Copyright 2023 Ayush Gupta</footer>
+
+
+</body>
+
+</html>

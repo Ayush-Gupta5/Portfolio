@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 25, 33);
+            color: white;
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 50, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 23px;
+        }
+
+        .left {
+            font-size: 1.8rem;
+        }
+        
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .firstSection>div {
+            width: 40%;
+        }
+
+        .leftSection {
+            font-size: 1.5rem;
+            text-align: justify;
+            line-height: 1cm;
+
+
+        }
+
+        .rightSection img {
+            width: 60%;
+            border-radius: 50%;
+            margin-left: 20%;
+        }
+
+        .purple {
+            color: rgb(90, 189, 228);
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            text-decoration: none;
+            font-size: 1.08rem;
+            color: rgb(90, 189, 228);
+        }
+        .secondSection {
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .Skill {
+            font-size: 1.5rem;
+            line-height: 1cm;
+        }
+        .Main-heading{
+            text-align: center;
+            font-size: 3rem;
+            margin-top:30px  ;
+            margin-bottom: 0px;
+        }
+        .heading{
+            text-align: center;
+            font-size: 2rem;
+        }
+        .keySkill {
+            display:flex;
+            justify-content: center; 
+            margin: 20px 0px;  
+        }
+        .keySkill ul li{
+            margin: 0 23px;  
+        }
+        footer{
+            text-align: center;
+            font-size: 1.3rem;
+            background-color:rgb(18, 50, 62);
+        }
+        b{
+            color: rgb(90, 189, 228);
+        }
+        .Download{
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="AboutMe.html">About Me</a></li>
+                    <li><a href="project.html">Projets</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a onclick="downloadPDF()" class="Download">Download Resume</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="Main-heading">About Me</div>
+        <section class="firstSection">
+            
+            <div class="leftSection">
+                
+                I am passionate about creating robust and efficient web applications that deliver exceptional user experiences. My expertise in PHP, combined with a deep understanding of web development best practices, has allowed me to successfully contribute to a variety of projects.
+            </div>
+            <div class="rightSection">
+                <img src="image/profile_img.jpeg" alt="">
+            </div>
+        </section>
+        <section class="secondSection">
+            <div class="Skill">
+                <div class="heading">Technical Skills</div>
+                <div class="keySkill">
+                    |&nbsp;<b>PHP</b>&nbsp;|&nbsp;<b>MySQL</b>&nbsp;|&nbsp;<b>HTMl</b>&nbsp;|&nbsp;<b>CSS</b>&nbsp;|&nbsp;<b>JS</b>&nbsp;|&nbsp;<b>Laravel FrameWork (Beginner)</b>&nbsp;|&nbsp;<b>WordPress</b>&nbsp;|&nbsp;<b>Core Java</b>&nbsp;|&nbsp;<b>Core Python</b>&nbsp;|&nbsp;<b>OOP's Concept</b>&nbsp;|&nbsp;<b>Git & GitHub</b>&nbsp;|
+
+                    
+                </div>
+                <div class="heading">Soft Skills</div>
+                <div class="keySkill">
+                    |&nbsp;<b>Time Management</b>&nbsp;|&nbsp;<b>Leaderships</b>&nbsp;|&nbsp;<b>Teamwork</b>&nbsp;|&nbsp;<b>Problem-solving</b>&nbsp;|&nbsp;<b>Patience</b>&nbsp;|&nbsp;<b>Flexibility</b>&nbsp;|&nbsp;<b>Communication</b>&nbsp;|
+
+                    
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script>
+        function downloadPDF() {
+            // Replace 'your-pdf-file.pdf' with the actual path to your PDF file
+            var pdfUrl = 'Document/Resume-Ayush-Gupta.pdf';
+            var a = document.createElement('a');
+            a.href = pdfUrl;
+            a.download = 'Ayush-Gupta-Resume.pdf'; // Name of the downloaded file
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+    </script>
+    <footer>&copy; Copyright 2023 Ayush Gupta</footer>
+</body>
+
+</html>
